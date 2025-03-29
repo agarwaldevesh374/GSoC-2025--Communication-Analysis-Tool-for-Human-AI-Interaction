@@ -1,0 +1,43 @@
+# Streamlit - Web application framework for dashboards
+streamlit==1.30.0  
+
+# Data manipulation and analysis
+pandas==2.1.4  
+numpy==1.26.3  
+
+# Data visualization
+matplotlib==3.8.2  
+seaborn==0.13.2  
+plotly==5.18.0  
+
+# Graph-based analysis (e.g., speaker interaction networks)
+networkx==3.2.1  
+
+# Machine Learning & Sentiment Analysis
+scikit-learn==1.4.0  
+nltk==3.8.1        # Natural Language Toolkit for text processing
+textblob==0.17.1   # Text processing and sentiment analysis
+transformers==4.38.2  # Pre-trained deep learning models for NLP (Hugging Face)
+
+# PyTorch - For deep learning & speaker diarization models
+torch==2.2.1  
+torchaudio==2.2.1  
+
+# Audio Processing
+librosa==0.10.2  # For audio feature extraction
+pydub==0.25.1    # Audio file conversion and processing
+
+# PyAnnote - Speaker diarization and audio processing
+pyannote.audio==3.1.1  
+
+# OpenCV - For video processing
+opencv-python==4.9.0.80  
+
+# Database connectivity (for storing results)
+pymongo==4.6.1  # MongoDB connection  
+
+# Flask - Optional API for backend integration
+flask==3.0.1  
+
+# Ngrok - Expose local Streamlit app to the web
+ngrok==0.12.2  
