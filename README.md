@@ -1,5 +1,5 @@
 # GSoC-2025--Communication-Analysis-Tool-for-Human-AI-Interaction
-GSoC-2025 @ HumanAI > ISSR > "Communication Analysis Tool for Human-AI Interaction Driving Simulator Experiments" 
+GSoC-2025 @ HumanAI > ISSR > "Communication Analysis Tool for Human-AI Interaction Driving Simulator Experiments"
 (Python/Machine Learning/Natural Language Processing)
 
 ## Description of the project:
