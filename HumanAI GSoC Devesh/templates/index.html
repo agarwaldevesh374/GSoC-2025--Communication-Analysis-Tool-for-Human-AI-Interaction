@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Visualization Dashboard</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="dashboard">
+        <header>
+            <h1>Interactive Data Visualization Dashboard</h1>
+            <div class="data-info">
+                <span id="data-summary"></span>
+            </div>
+        </header>
+        
+        <div class="control-panel">
+            <div class="control-group">
+                <label for="plot-type">Chart Type:</label>
+                <select id="plot-type">
+                    <option value="line">Line Chart</option>
+                    <option value="bar">Bar Chart</option>
+                    <option value="scatter">Scatter Plot</option>
+                    <option value="box">Box Plot</option>
+                </select>
+            </div>
+            
+            <div class="control-group">
+                <label for="x-axis">X-Axis:</label>
+                <select id="x-axis"></select>
+            </div>
+            
+            <div class="control-group">
+                <label for="y-axis">Y-Axis:</label>
+                <select id="y-axis"></select>
+            </div>
+            
+            <div class="control-group">
+                <label for="color-by">Color By:</label>
+                <select id="color-by">
+                    <option value="">None</option>
+                </select>
+            </div>
+            
+            <button id="update-plot">Update Plot</button>
+        </div>
+        
+        <div class="visualization-container">
+            <div id="plot-container"></div>
+        </div>
+        
+        <div class="data-preview">
+            <h2>Data Preview</h2>
+            <div id="data-table-container">
+                <table id="data-table">
+                    <thead>
+                        <tr id="table-header"></tr>
+                    </thead>
+                    <tbody id="table-body"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>Powered by Flask, Plotly, and Python</p>
+    </footer>
+    
+    <script src="/static/js/dashboard.js"></script>
+</body>
+</html>
